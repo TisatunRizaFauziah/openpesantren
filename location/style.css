@@ -1,0 +1,496 @@
+/* style */
+/* link dari google font */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Peta&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap");
+/* mengatur universal */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+
+header {
+  background-color: #333333;
+  color: #fff;
+  padding: 1rem;
+  /* justify-content:space-between; */
+  padding: 20px;
+}
+/* mengatur navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #17f226;
+}
+/* mengatur tulisan open data ponpes */
+h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+span {
+  color: rgb(235, 133, 8);
+}
+
+/* mengatur navbar menu */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* mengatur navbar menu list */
+.nav-menu li {
+  left: 50%;
+}
+
+/* mngatur navbar menu list a */
+.nav-menu li a {
+  color: #fff;
+  /* margin-right: 0; */
+  text-decoration: none;
+  justify-content: space-between;
+  margin: 30px;
+  left: 20%;
+  gap: 20px;
+}
+.nav-menu li a:hover {
+  color: rgb(235, 133, 8);
+}
+
+/* mengatur icon */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* mengatur icon */
+.menu-icon:hover {
+  color: #fff;
+}
+
+/* mengatur main */
+main {
+  /* padding: 20px; */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* mengatur class logo */
+.logo {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* mengatur gambar logo */
+.logo img {
+  width: 400px;
+  height: 400px;
+}
+
+/* mengatur paragraf  */
+.logo p {
+  color: #000;
+  margin: 20px;
+  padding: 20px;
+  font-size: 36px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: auto;
+}
+
+/* mengatur form pilih prov/kab */
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* mengatur form pilih prov/kab label*/
+.form-container label {
+  color: #fff;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 26px;
+}
+/*mengatur form pilih prov/kab label*/
+.form-container select {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #5b5353;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+/* mengatur hasil dari select */
+#hasil {
+  margin-top: 30px;
+  background-color: #fff;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+/* mengatur table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 5px;
+}
+
+th,
+td {
+  border: 1px solid #747778;
+  padding: 8px;
+  text-align: left;
+  justify-content: center;
+  text-align: center;
+}
+
+th {
+  width: 10px;
+  background-color: #a2c5e9;
+  justify-content: center;
+  text-align: center;
+}
+
+tr:hover {
+  background-color: #d8e8ed;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  position: static;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+/* responsive (portrait phones) */
+@media (max-width: 576px) {
+  .navbar h1 {
+    font-size: 24px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #333;
+    padding: 1rem;
+    font-size: 16px;
+  }
+
+  .navbar ul.show {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo p {
+    font-size: 26px;
+  }
+
+  .form-container label {
+    font-size: 20px;
+  }
+
+  .form-container select {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+  .logo img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* rsponsive (landscape phones) */
+@media (min-width: 577px) and (max-width: 767px) {
+  .nav-menu {
+    display: none; /* menyembunyikan navbar  */
+  }
+  .menu-icon {
+    font-size: 25px;
+    display: block; /* menampilkan icon menu*/
+  }
+  .nav-menu.show {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    height: 30%;
+    gap: 30px;
+    top: 70px;
+    right: 10px;
+    background-color: #333;
+    padding: 1rem;
+    z-index: 1;
+    font-size: 20px;
+  }
+
+  .menu-icon {
+    display: blok;
+  }
+  .logo p {
+    font-size: 32px;
+  }
+
+  .form-container label {
+    font-size: 22px;
+  }
+
+  .form-container select {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  .logo img {
+    width: 300px;
+    height: 300px;
+  }
+  table {
+    font-size: 8px;
+  }
+  th,
+  td {
+    padding: 3px;
+  }
+}
+
+/* responsive(tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .nav-menu {
+    display: none; /*menyembunyikan navbar */
+  }
+  .menu-icon {
+    font-size: 25px;
+    display: block; /* menampilkan icon menu */
+  }
+  .nav-menu.show {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    height: 30%;
+    gap: 30px;
+    top: 70px;
+    right: 10px;
+    background-color: #333;
+    padding: 1rem;
+    z-index: 1;
+    font-size: 20px;
+  }
+  .navbar h1 {
+    font-size: 32px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .navbar ul {
+    display: flex;
+  }
+
+  .navbar ul li a {
+    margin: 15px;
+  }
+
+  .logo p {
+    font-size: 36px;
+  }
+
+  .form-container label {
+    font-size: 24px;
+  }
+
+  .form-container select {
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+
+  .logo img {
+    width: 400px;
+    height: 400px;
+  }
+  table {
+    font-size: 16px;
+  }
+  th,
+  td {
+    padding: 10px;
+  }
+}
+
+/* responsive (portrait phones) */
+@media (max-width: 576px) {
+  @media (max-width: 425px) {
+    .navbar h1 {
+      font-size: 22px;
+    }
+
+    .nav-menu li a {
+      font-size: 12px;
+      margin: 10px;
+    }
+
+    .logo p {
+      font-size: 20px;
+    }
+
+    .form-container label {
+      font-size: 18px;
+    }
+
+    .form-container select {
+      font-size: 12px;
+    }
+
+    .logo img {
+      width: 180px;
+      height: 180px;
+    }
+  }
+
+  /* Add responsive styles for 375px */
+  @media (max-width: 375px) {
+    .navbar h1 {
+      font-size: 20px;
+    }
+
+    .nav-menu li a {
+      font-size: 10px;
+      margin: 5px;
+    }
+
+    .logo p {
+      font-size: 20px;
+    }
+
+    .form-container label {
+      font-size: 16px;
+    }
+
+    .form-container select {
+      font-size: 10px;
+    }
+
+    .logo img {
+      width: 150px;
+      height: 150px;
+    }
+    footer {
+      font-size: 14px;
+    }
+  }
+
+  /* Add responsive styles for 320px */
+  @media (max-width: 320px) {
+    .navbar h1 {
+      font-size: 18px;
+    }
+
+    .nav-menu li a {
+      font-size: 8px;
+      margin: 2px;
+    }
+
+    .logo p {
+      font-size: 15px;
+    }
+
+    .form-container label {
+      font-size: 14px;
+    }
+
+    .form-container select {
+      font-size: 8px;
+    }
+
+    .logo img {
+      width: 120px;
+      height: 120px;
+    }
+    table {
+      font-size: 12px;
+    }
+    th,
+    td {
+      padding: 5px;
+    }
+    footer {
+      font-size: 12px;
+    }
+  }
+
+  /* responsive 280px */
+  @media (max-width: 280px) {
+    .navbar h1 {
+      font-size: 16px;
+    }
+
+    .nav-menu li a {
+      font-size: 6px;
+      margin: 2px;
+    }
+
+    .logo p {
+      font-size: 16px;
+    }
+
+    .form-container label {
+      font-size: 12px;
+    }
+
+    .form-container select {
+      font-size: 6px;
+    }
+
+    .logo img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  table {
+    font-size: 8px;
+  }
+  th,
+  td {
+    padding: 3px;
+  }
+  footer {
+    font-size: 10px;
+  }
+}

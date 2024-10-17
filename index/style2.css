@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Peta&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+
+header {
+  background-color: #333333;
+  color: #fff;
+  padding: 1rem;
+  padding: 20px;
+}
+
+/* mengatur navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #17f226;
+}
+
+/* mengatur tulisan opendata ponpes */
+h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+span {
+  color: rgb(235, 133, 8);
+}
+
+/* mengatur navbar menu */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* mengatur navbar menu list */
+.nav-menu li {
+  left: 50%;
+}
+
+/* mengatur navbar menu list a */
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  justify-content: space-between;
+  margin: 30px;
+  left: 20%;
+  gap: 20px;
+}
+.nav-menu li a:hover {
+  color: rgb(235, 133, 8);
+}
+
+/* mengatur section */
+.hero {
+  background-image: url("../image/location.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-align: center;
+}
+
+/* mengatur tulisan selamat daatang...... */
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+/* mengatur paragraf */
+.hero p {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+/* mengatur form subscribe */
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
+
+/* mengatur inputan */
+input[type="email"] {
+  width: 70%;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+/* mengatur button */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.cta-button {
+  padding: 12px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #cc5500;
+}
+
+/* mengatur icon menu */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+.menu-icon:hover {
+  color: #fff;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.feature {
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+}
+
+.feature i {
+  font-size: 36px;
+  color: #ff6600;
+  margin-bottom: 20px;
+}
+
+.feature h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 18px;
+  color: #777;
+}
+
+/* responsive di ukuran tablet */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+  .menu-icon {
+    font-size: 28px;
+    display: block;
+  }
+  .nav-menu.show {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    height: 30%;
+    gap: 30px;
+    top: 70px;
+    right: 10px;
+    background-color: #333;
+    padding: 1rem;
+    z-index: 1;
+    font-size: 20px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type="email"] {
+    width: 60%;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .feature {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .feature i {
+    font-size: 28px;
+  }
+
+  .feature h2 {
+    font-size: 22px;
+  }
+
+  .feature p {
+    font-size: 16px;
+  }
+}
+
+/* mengatur responsive  di ukuran 320px */
+@media (max-width: 320px) {
+  .nav-menu {
+    display: none;
+  }
+  .menu-icon {
+    font-size: 20px;
+    display: block;
+  }
+  .nav-menu.show {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    height: 30%;
+    gap: 30px;
+    top: 70px;
+    right: 10px;
+    background-color: #333;
+    padding: 1rem;
+    z-index: 1;
+    font-size: 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+  footer {
+    font-size: 12px;
+  }
+}
+
+/* responsive laptop */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+}
+/* responsive dekstop */
+@media screen and (min-width: 1200px) {
+  .hero-content h1 {
+    font-size: 40px;
+  }
+}
+/* footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

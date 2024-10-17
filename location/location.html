@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Judul Halaman -->
+    <title>Location</title>
+    <!-- link google icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- link style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <h1>
+          OpenData<i><span>Ponpes</span></i>
+        </h1>
+
+        <!--Navbar menu -->
+        <ul class="nav-menu">
+          <li><a href="../index/index.html">Home</a></li>
+          <li><a href="../location/location.html">Location</a></li>
+          <li><a href="../about/about.html">About</a></li>
+          <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+        <!-- icon menu -->
+        <div class="menu-icon material-icons">menu</div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <!-- gambar ayo mondok -->
+        <div class="logo">
+          <img src="../image/ayomondok.png" />
+          <p>
+            <b
+              >Temukan informasi seputar pesantren di seluruh Indonesia di bawah
+              ini.</b
+            >
+          </p>
+        </div>
+        <!-- form pilih provinsi -->
+        <div class="form-container">
+          <label for="prov">Pilih Provinsi:</label>
+          <select id="prov">
+            <option value="">Pilih Provinsi</option>
+          </select>
+          <!-- form pilih kab -->
+          <label for="kab">Pilih Kabupaten/Kota:</label>
+          <select id="kab">
+            <option value="">Pilih Kabupaten/Kota</option>
+          </select>
+        </div>
+
+        <div id="hasil">
+          <!-- Hasil data pesantren akan ditampilkan di sini -->
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <p>&copy; 2023 Tisatun Riza Fauziah. All rights reserved.</p>
+    </footer>
+
+    <!-- javaScript -->
+    <script src="../index.js"></script>
+    <script src="../index2.js"></script>
+  </body>
+</html>

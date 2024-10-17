@@ -1,0 +1,257 @@
+/* Style */
+
+/* link dari google icon */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Peta&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap");
+
+/* Mengatur universal */
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+
+header {
+  background-color: #333333;
+  color: #fff;
+  padding: 1rem;
+  /* justify-content:space-between; */
+  padding: 20px;
+}
+
+/* style Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #17f226;
+}
+
+/* Mengatur h1(opendata ponpes) */
+h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+span {
+  color: rgb(235, 133, 8);
+}
+
+/* mengatur navbar menu */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* mengatur navbar menu list */
+.nav-menu li {
+  left: 50%;
+}
+
+/* mengatur navbar menu list  a*/
+.nav-menu li a {
+  color: #fff;
+  /* margin-right: 0; */
+  text-decoration: none;
+  justify-content: space-between;
+  margin: 30px;
+  left: 20%;
+  gap: 20px;
+}
+.nav-menu li a:hover {
+  color: rgb(235, 133, 8);
+}
+
+/* mengatur icon */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+.menu-icon:hover {
+  color: #fff;
+}
+
+/* mengatur main */
+main {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* mengatur section */
+section {
+  margin: 10px;
+  background-color: white;
+  min-width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+
+/* mengatur article h1 */
+article h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+/* mengatur aticle p */
+article p {
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+
+/* mengatur aside */
+aside {
+  background-color: rgb(231, 234, 242);
+  width: 300vw;
+  justify-content: center;
+}
+
+/* mengatur gambar yang ada di aside */
+.gambar {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/* mengatur footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+/* Hamburger menu icon */
+.menu-icon {
+  font-size: 24px;
+  display: none;
+}
+
+/* mengatur rsponsive (tablet) */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.show {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    height: 30%;
+    gap: 30px;
+    top: 70px;
+    right: 10px;
+    background-color: #333;
+    padding: 1rem;
+    z-index: 1;
+    font-size: 20px;
+  }
+}
+
+/* mengatur responsive (portrait phones) */
+@media (max-width: 480px) {
+  .navbar h1 {
+    font-size: 18px;
+  }
+
+  .menu-icon {
+    font-size: 22px;
+  }
+
+  .navbar ul.show {
+    top: 60px;
+  }
+
+  .gambar img {
+    width: 100%;
+  }
+
+  article h2 {
+    font-size: 20px;
+  }
+
+  article h1 {
+    font-size: 18px;
+  }
+
+  article p {
+    font-size: 12px;
+  }
+
+  aside h3 {
+    font-size: 14px;
+  }
+
+  aside p {
+    font-size: 10px;
+  }
+
+  footer {
+    font-size: 8px;
+  }
+}
+
+/* mengatur responsive(landscape phones) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar h1 {
+    font-size: 24px;
+  }
+
+  .menu-icon {
+    font-size: 28px;
+  }
+
+  .navbar ul.show {
+    top: 70px;
+  }
+
+  .gambar img {
+    width: 100%;
+  }
+
+  article h2 {
+    font-size: 24px;
+  }
+
+  article h1 {
+    font-size: 16px;
+  }
+
+  article p {
+    font-size: 14px;
+  }
+
+  aside h3 {
+    font-size: 16px;
+  }
+
+  aside p {
+    font-size: 12px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+}
